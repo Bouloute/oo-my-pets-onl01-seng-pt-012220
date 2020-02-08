@@ -34,8 +34,6 @@ class Owner
   end
   
   def buy_cat(name)
-    my_cat = Cat.all.find{|cat| cat.name == name}
-    my_cat.owner = self
-    binding.pry
+    Cat.new(name, self)
   end
 end
