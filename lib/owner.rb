@@ -26,7 +26,7 @@ class Owner
   end
   
   def cats 
-    Cat.all.select {|cat| cat.owner == self}
+    @@all.select {|pet| petcat.owner == self}
   end
     
   def dogs 
@@ -36,6 +36,6 @@ class Owner
   def buy_cat(name)
     my_cat = Cat.all.find{|cat| cat.name == name}
     my_cat.owner = self
-    binding.pry
+    #binding.pry
   end
 end
