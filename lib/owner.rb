@@ -41,4 +41,6 @@ end
 
 anna = Owner.new('Anna')
 justin = Owner.new('Justin')
-karen = Cat.new('Karen')
+karen = Cat.new('Karen', justin)
+anna.buy_cat(Karen.name)
+binding.pry
