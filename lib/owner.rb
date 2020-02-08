@@ -61,6 +61,5 @@ class Owner
       dog.owner = nil
     }
     
-    self.reset_all
   end
 end
