@@ -53,6 +53,6 @@ class Owner
     
     cats.each{|cat| cat.mood = "nervous"}
     dogs.each{|dog| dog.mood = "nervous"}
-    self.reset_all
+    @@all.clear
   end
 end
