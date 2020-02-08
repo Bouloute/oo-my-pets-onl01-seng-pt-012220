@@ -35,8 +35,10 @@ class Owner
   
   def buy_cat(name)
     my_cat = Cat.all.find{|cat| cat.name == name}
-    binding.pry
     my_cat.owner = self
-    binding.pry
   end
 end
+
+anna = Owner.new('Anna')
+justin = Owner.new('Justin')
+karen = Cat.new('Karen')
