@@ -60,6 +60,9 @@ class Owner
       dog.mood = "nervous"
       dog.owner = nil
     }
+  end
+  
+  def list_pets
     
   end
 end
