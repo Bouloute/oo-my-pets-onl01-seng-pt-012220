@@ -2,17 +2,17 @@ class Dog
   attr_accessor :owner, :mood
   attr_reader :name
   
-  @@all = []
+  #@@all = []
   
   def initialize(name, owner)
     @name = name 
     @owner = owner
     @mood = "nervous"
-    @@all.push(self)
+   # @@all.push(self)
   end
   
-  def self.all 
-    @@all
-  end
+  #def self.all 
+  #  @@all
+  #end
   
 end
