@@ -1,23 +1,4 @@
 require('pry')
-class Cat
-  attr_accessor :owner, :mood
-  attr_reader :name
-  
-  @@all = []
-  
-  def initialize(name, owner)
-    @name = name 
-    @owner = owner
-    @mood = "nervous"
-    @@all.push(self)
-  end
-  
-  def self.all 
-    @@all
-  end
-  
-end
-
 class Owner
   attr_reader :name, :species
   @@all = []
@@ -57,9 +38,3 @@ class Owner
     my_cat.owner = self
   end
 end
-
-anna = Owner.new('Anna')
-justin = Owner.new('Justin')
-karen = Cat.new('Karen', justin)
-anna.buy_cat(karen.name)
-binding.pry
